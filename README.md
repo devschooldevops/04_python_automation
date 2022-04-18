@@ -1,3 +1,3 @@
 # DevSchool DevOps edition
 
-This repository is used for one of the lessons of the devops devschool
+This repository is used for the Python lesson.

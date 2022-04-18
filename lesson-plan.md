@@ -4,33 +4,27 @@
 
 **Duration**: 3 hours (max 1 hour theory)
 
-**Primary teacher**: <>
+**Primary teacher**: Mircea
 
-**Secondary teacher**: <>
+**Secondary teacher**: Adrian, Maria
 
 ## Goal
 At the end of the lesson the student should have
-- a basic understanding of Docker, the fundamentals
-- an understanding of what the difference between docker virtualizer and traditional virtualizer is
-- Know how to run basic docker commands
-- Know the difference between an image and a container
-- tip: `docker run -d -p 80:80 docker/getting-started` is a great place for basic material
-- Know how to write a Dockerfile
+- have a basic understanding of python scripting
 
 ## Resources required/used
-Example:
-- Azure virtual machines;
-- Repos;
-- Local machine; etc
-
-## Prerequisites
-- what do the students need to have installed before the lesson
-- what do the students need to know before the lesson
+- Linux
 
 ## Agenda
-Example:
-- 0-5 min: introduction;
-- 5-25 min: slides; etc.
+- 20 min: intro/setup
+- 30 min: data types + vars
+- 10 min: operators
+- 10 min: decision-making
+- 15 min: loops
+- 20 min: functions
+- 10 min: pip and packages
+- 15 min: basic io
+- rest: practice
 
 ## Feedback from students
 (generic survey will be setup)

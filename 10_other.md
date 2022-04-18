@@ -1,1 +1,0 @@
-Debugging, frameworks, database, network, multithreading, OOP, envs, pip

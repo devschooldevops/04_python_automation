@@ -33,7 +33,4 @@ else:
 Notice the indentation, this is how blocks of code (scopes) are delimited in python.
 
 ### Practice
-- check if input number is the perfect square of an integer. (9 is the perfect square of an integer (3), 10 is not)
-
-### Extra
-Newer versions of python3 have a ```match case``` statement.
+- add to number variables, check if the sum and/or the product is divisible by 3.

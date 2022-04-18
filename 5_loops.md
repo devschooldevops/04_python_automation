@@ -18,7 +18,14 @@ for num in l:
 
 fruits = ['banana', 'apple',  'mango']
 for index in range(len(fruits)):
-   print ('Current fruit :', fruits[index])
+    print ('Current fruit :', fruits[index])
+
+for letter in "word":
+    print(letter)
+
+my_dict = {'a': 1, 'b': 2}
+for key in my_dict.keys():
+    print(my_dict[key])
 ```
 
 ### While

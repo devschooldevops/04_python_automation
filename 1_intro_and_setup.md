@@ -9,10 +9,10 @@ $ pip3 --version
 ```
 If this returns noting good, then install python3.
 ```bash
-$ sudo apt install python3, python3-pip # pip is the python package manager, with it we can get python packages from the internet
+$ sudo yum install python3, python3-pip # pip is the python package manager, with it we can get python packages from the internet
 ```
 Try it out:
-```python
+```python3
 $ python3
 >>> from datetime import date
 >>> print(date.today())
@@ -21,7 +21,7 @@ $ python3
 >>> exit()
 ```
 or write it as a script (my_script.py):
-```python
+```python3
 #!/usr/bin/python3
 
 from datetime import date
@@ -29,5 +29,6 @@ from datetime import date
 print(date.today())
 ```
 ```bash
+$ chmod +x my_script.py
 $ python3 my_script.py
 ```

@@ -1,5 +1,5 @@
 # Variables
-```python
+```python3
 #!/bin/python3
 
 # basic variables
@@ -18,16 +18,18 @@ a, b, c = 1, 2, "john"
 
 ## Numbers
 In python, we have number types int, float and complex.
-```python
+```python3
 #!/bin/python3
 
 integer = 1
 floating_point = 2.0
 complex_number = complex(1, 2)
+num = int("123", 10)
 
 print (integer)
 print (floating_point)
 print (complex_number)
+print (num)
 ```
 
 ## String
@@ -35,7 +37,7 @@ Strings in Python are identified as a contiguous set of characters represented i
 Subsets of strings can be taken using the slice operator ([ ] and [:] ) 
 with indexes starting at 0 in the beginning of the string and working their 
 way from -1 to the end.
-```python
+```python3
 #!/bin/python3
 
 hello = 'Hello World!'
@@ -47,11 +49,25 @@ print (hello[2:4])     # Prints characters starting from 3rd to 4th
 print (hello[1:])      # Prints string starting from 2nd character ('e')
 print (hello * 2)      # Prints string two times
 print (hello + "TEST") # Prints concatenated string
+
+# string formatting
+print ("We can add strings %s, decimal numbers %d" % ("abcd", 2)) 
+
+# triple quote
+long_string = """
+very
+very
+long
+string
+"""
+print (long_string)
+
+print(len(hello))
 ```
 
 ## Lists
 A list contains items separated by commas and enclosed within square brackets. Each element can be of any type (even another list).
-```python
+```python3
 #!/bin/python3
 
 sample_list = [ 'a', 22 , 'h', 4.20, 'asdf', [2, 3] ]
@@ -63,6 +79,24 @@ print (sample_list[1:3])                   # Prints elements starting from 2nd t
 print (sample_list[2:])                    # Prints elements starting from 3rd element
 print (sample_list * 2)                    # Prints list two times
 print (sample_list[0:3] + sample_list[5:]) # Prints concatenated lists
+
+sample_list[1] = 21
+print(sample_list[1])    # 21, not 22, this is an update
+
+del sample_list[1]
+print(sample_list[1])    # prints h, 21 has been removed
+
+sample_list.append('abcd')
+print(sample_list[-1])   # abcd
+
+sample_list.insert(1, 22)
+print(sample_list[1])    # 22 is back !!
+
+sample_list.reverse()
+sample_list.reverse()    # double revert, same list
+
+sample_list.remove(22)
+print(sample_list)       # removed 22
 ```
 
 ## Tuples
@@ -83,6 +117,9 @@ print (sample_tuple * 2)                     # Prints tuple two times
 print (sample_tuple[0:3] + sample_tuple[5:]) # Prints concatenated tuple
 
 sample_tuple[0] = 'b'                        # will generate error
+del sample_tuple[0]                          # same, not possible
+
+print(len(sample_tuple))                     # 6 elements
 ```
 
 ## Dictionary
@@ -91,6 +128,9 @@ Dictionaries hold pairings of key -> value type. Keys are usually numbers or str
 #!/bin/python3
 
 my_dict = {'a': 2}
+my_dict.clear()              # clear all pairs
+
+my_dict['a'] = 2
 my_dict['one'] = "asdf"
 my_dict[2] = "abcd"
 my_dict[223] = [1, 2, 3, 4]
@@ -101,20 +141,14 @@ print (my_dict)              # Prints complete dictionary
 print (my_dict.keys())       # Prints all the keys
 print (my_dict.values())     # Prints all the values
 print (my_dict[123])         # Generates error
-```
 
-## Utilities
-For these data types, there are a lot of utilities in python.<br>
-Some examples:
-```python
-x = -2
-print(abs(x)) # absolute values, there are also utility functions for square root, logarithm etc.
+print(len(my_dict))
+print('a' in my_dict)        # True
 
-y = [1, 2, 3]
-print(min(y)) # there is also max, avg etc.
-print(y.reverse()) # there is also sort, count, append, remove etc.
+another_dict = {'b': 3}
+my_dict.update(another_dict)
+print('b' in my_dict)        # True
 ```
-Before going on a crusade to rewrite python, please check the utility functions for your data types.
 
 ### Practice
-- Play around with this types
+- Play around with these data types, add them to a script.
