@@ -76,6 +76,3 @@ print (a)
 print (b)
 print (l)
 ```
-
-### Practice
-- Fibonacci sequence until n (fib(n) = fib(n-1) + fib(n-2))

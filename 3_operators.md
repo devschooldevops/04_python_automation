@@ -106,6 +106,3 @@ print (z not in x)
 
 print ('p' in "python3")# True
 ```
-
-### Practice
-- play around with operators, compute the solutions of a 1st grade function (f(x) = ax+b).

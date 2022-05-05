@@ -31,6 +31,3 @@ else:
       print  ("not Divisible by 2 not divisible by 3")
 ```
 Notice the indentation, this is how blocks of code (scopes) are delimited in python.
-
-### Practice
-- add to number variables, check if the sum and/or the product is divisible by 3.
