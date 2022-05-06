@@ -68,5 +68,3 @@ for num in l:
     print(num)
 # print only odd numbers
 ```
-### Practice
-- return prime numbers from input list

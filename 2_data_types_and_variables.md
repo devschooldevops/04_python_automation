@@ -149,6 +149,3 @@ another_dict = {'b': 3}
 my_dict.update(another_dict)
 print('b' in my_dict)        # True
 ```
-
-### Practice
-- Play around with these data types, add them to a script.

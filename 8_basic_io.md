@@ -4,9 +4,21 @@
 #!/usr/bin/python3
 import sys
 
+# x is a string
 x = input("write a value: ")            # read from standard input
 print (x)                               # (default) print to stdout
 print ("fatal error", file=sys.stderr)  # print to stderr
+```
+
+## Command line arguments
+
+```python3
+#!/usr/bin/python3
+import sys
+
+# cmd line args are strings
+print (len(sys.argv) - 1)               # print number arguments excluding script name
+print (sys.argv[1:])                    # print arguments, also excluding script name
 ```
 
 ## Files
@@ -81,11 +93,12 @@ my_file.close()
 ## REST APIs
 ```python3
 #!/usr/bin/python3
-import requests
+import requests, json
 
 # check this: https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
 
 url = "https://api.coinbase.com/v2/currencies"
 response = requests.request("GET", url)
-print(response.text)
+json_response = json.loads(response.text)          # this is traversable now
+print( json_response)
 ```
