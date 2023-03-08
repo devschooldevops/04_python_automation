@@ -72,4 +72,4 @@ for num in l:
 ## Practice
 
 Compute the fibonacci sequence for a given input.
-Compute the greatest common denominator for a given number.
+Compute the greatest common denominator for two given numbers.

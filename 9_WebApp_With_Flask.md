@@ -118,12 +118,12 @@ students = [
 
 
 @app.route('/students')
-def get_incomes():
+def get_students():
     return jsonify(students)
 
 
 @app.route('/students', methods=['POST'])
-def add_income():
-    incomes.append(request.get_json())
+def add_student():
+    students.append(request.get_json())
     return '', 204
 ```
