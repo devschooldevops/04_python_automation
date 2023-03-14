@@ -71,5 +71,6 @@ for num in l:
 
 ## Practice
 
-Compute the fibonacci sequence for a given input.
+Compute the fibonacci sequence for a given input. Fibonacci sequence: 0 1 1 2 3 5 8 13 21 ...
+Prime number using loops only! A prime number has only two divisors, itself and 1.
 Compute the greatest common denominator for two given numbers.

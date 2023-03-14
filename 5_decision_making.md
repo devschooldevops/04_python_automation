@@ -34,3 +34,4 @@ Notice the indentation, this is how blocks of code (scopes) are delimited in pyt
 
 ## Practice
 Generate random number, tell if it is even or odd.
+Write a script which takes a file name as input and shows what type of file it is.

@@ -127,3 +127,83 @@ def add_student():
     students.append(request.get_json())
     return '', 204
 ```
+
+## Adding a database for data persistance
+
+In order to persist data we need files, or a database. In our example we will use SQLite as it's already 
+part of python3 
+
+The first step in order to connect our application to a database is to create a database 
+
+```sqlite
+DROP TABLE IF EXISTS students;
+
+CREATE TABLE students (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    age INTEGER NOT NULL,
+    name text NOT NULL
+);
+```
+
+Then we need to initiate database connection
+
+```python
+import sqlite3
+
+connection = sqlite3.connect('database.db')
+
+
+with open('schema.sql') as f:
+    connection.executescript(f.read())
+
+cur = connection.cursor()
+
+cur.execute("INSERT INTO students (age, name) VALUES (?, ?)",
+            ('21', 'Marie')
+            )
+
+cur.execute("INSERT INTO students (age, name) VALUES (?, ?)",
+            ('22', 'Jay')
+            )
+connection.commit()
+connection.close()
+```
+
+How we can see the elements in the database
+
+```python
+import sqlite3
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+
+def get_db_connection():
+    conn = sqlite3.connect('database.db')
+    conn.row_factory = sqlite3.Row
+    return conn
+    
+@app.route('/')
+def index():
+    conn = get_db_connection()
+    students = conn.execute('SELECT * FROM students').fetchall()
+    conn.close()
+    return render_template('index.html', posts=posts)
+
+```
+
+
+```html
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{% block title %} Welcome to FlaskIntro {% endblock %}</h1>
+{% for student in students %}
+<a href="#">
+  <h2>{{ student['name'] }}</h2>
+</a>
+<span class="badge badge-primary">{{ student['age'] }}</span>
+<hr>
+{% endfor %}
+{% endblock %}
+```

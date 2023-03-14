@@ -78,4 +78,7 @@ print (l)
 ```
 
 ## Practice
-Same from before, using functions
+Generate random number, tell if it is even or odd function
+Prime number using loops only! A prime number has only two divisors, itself and 1. function
+Write a function which takes a file name as parameter and shows what type of file it is.
+
