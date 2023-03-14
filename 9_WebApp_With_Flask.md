@@ -86,8 +86,10 @@ If we just run it now, it will generate an error, because of missing templates
 
 Step 3. Add template file 
 
+templates folder will be looked as default location for html file
+
 ```commandline
-mkdir template
+mkdir templates
 cd templates
 vi index.html
 ```
