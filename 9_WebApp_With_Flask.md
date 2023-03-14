@@ -190,7 +190,7 @@ def index():
     conn = get_db_connection()
     students = conn.execute('SELECT * FROM students').fetchall()
     conn.close()
-    return render_template('index.html', posts=posts)
+    return render_template('index.html', students=students)
 
 ```
 
