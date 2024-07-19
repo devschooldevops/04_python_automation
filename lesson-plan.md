@@ -14,7 +14,14 @@ At the end of the lesson the student should have:
 - understanding of how to work with API requests in Python scripts
 
 ## Resources required/used
-- Python
+Example:
+- Azure virtual machines;
+- Repos;
+- Local machine; etc
+
+## Prerequisites
+- what do the students need to have installed before the lesson?
+- what do the students need to know before the lesson?
 
 ## Agenda
 The agenda must contain:
