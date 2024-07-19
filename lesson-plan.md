@@ -10,7 +10,6 @@
 
 ## Goal
 At the end of the lesson the student should have:
-- understanding of basic concepts in Python (variables, data types, decision making blocks, I/O, libraries, methods etc.)
 - hands-on experience on writing simple Python scripts
 - understanding of how to work with API requests in Python scripts
 
