@@ -24,7 +24,7 @@ Your task is to find out the following:
 - how many payments does a user make on average?
 
 
-To get the log file, run the 03-generate.py script.  
+To get the log file, run the 05-generate.py script.  
 ! **Be careful**  
 When using data that was read from a file, you should take care to strip whitespace and convert it to the datatype you actually want!
 ### Homework
