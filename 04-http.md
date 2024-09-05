@@ -49,6 +49,19 @@ else:
     print(f'Unexpected status code {resp.status_code}!')
 ```
 [Here](https://requests.readthedocs.io/en/latest/user/quickstart/#make-a-request) you can find more info on your options when sending requests and reading responses.
+
+Notably, to send a json body:
+```python
+import requests
+
+body = {"field1" : value1, "field2": value2}
+resp = requests.post('https://sample_post_api.com/add-data', data=body)
+if resp.status_code == 200: 
+    print(resp.text)
+else:
+    print(f'Unexpected status code {resp.status_code}!')
+
+```
 ## Practice:
 1. Send a request to wttr.in for a city of your choice. (check out the [github docs](https://github.com/chubin/wttr.in) for how to specify a city).  
 Ask wttr.in to give you back the weather in your native language.   
