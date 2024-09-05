@@ -63,8 +63,8 @@ else:
 
 ```
 ## Practice:
-1. Send a request to [status.plaintext](https://status.plaintext.sh/). Print the response text to the console.
-2. http.cat is a web app that can give you back an image of a cat for each HTTP status code. [Http cats](https://http.cat/).  
+1. Send a request to https://status.plaintext.sh/ [status.plaintext](https://status.plaintext.sh/). Print the response text to the console.
+2. http.cat is a web app that can give you back an image of a cat for each HTTP status code.(https://http.cat/ [Http cats](https://http.cat/).  
 Take the status code of the response from status.plaintext and send it to http.cat. Check out the website for where to put the status code.  
 Write the response of the request to http.cat to a jpeg file, and check out the image! (Access the raw response bytes using `resp.content`. The response body will be binary, not text! have a look at [the docs](https://docs.python.org/3/library/functions.html#open) to figure out how to write a binary file)
 
